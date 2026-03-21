@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard — Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .dashboard-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+        padding: 18px 22px;
+        margin-bottom: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+      }
+      .dashboard-card .post-info h3 {
+        font-size: 1rem;
+        margin-bottom: 4px;
+      }
+      .dashboard-card .post-info p {
+        color: #64748b;
+        font-size: 0.85rem;
+      }
+      .dashboard-card .card-actions {
+        display: flex;
+        gap: 10px;
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="logo" href="index.html">QEM Creatives</a>
+      <div class="nav-links">
+        <a href="index.html">All Posts</a>
+        <a href="create.html">New Post</a>
+        <button id="themeToggle" onclick="toggleTheme()">🌙 Dark</button>
+        <button class="btn-secondary" onclick="logout()">Logout</button>
+      </div>
+    </nav>
+
+    <div class="glass-container wide">
+      <h1 id="welcomeMsg">My Dashboard</h1>
+      <p class="subtitle">Manage your posts</p>
+
+      <div style="text-align: right; margin-bottom: 20px">
+        <a
+          href="create.html"
+          class="btn-primary"
+          style="width: auto; padding: 10px 24px; display: inline-block"
+        >
+          + New Post
+        </a>
+      </div>
+
+      <div id="myPostsContainer">
+        <p class="loading">Loading your posts...</p>
+      </div>
+    </div>
+
+    <script src="js/theme.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>

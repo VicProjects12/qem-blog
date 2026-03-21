@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post — Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .post-body {
+        line-height: 1.8;
+        color: #cbd5e1;
+        margin: 20px 0;
+      }
+      .post-meta {
+        color: #64748b;
+        font-size: 0.9rem;
+        margin-bottom: 24px;
+      }
+      .back-link {
+        color: #93c5fd;
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
+      .back-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="logo" href="index.html">QEM Creatives</a>
+      <div class="nav-links" id="navLinks">
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <button id="themeToggle" onclick="toggleTheme()">🌙 Dark</button>
+      </div>
+    </nav>
+
+    <div class="glass-container wide">
+      <a class="back-link" href="index.html">← Back to all posts</a>
+
+      <div id="postContent">
+        <p class="loading">Loading post...</p>
+      </div>
+
+      <div id="ownerActions" class="actions hidden">
+        <a id="editBtn" href="#" class="btn-secondary">Edit Post</a>
+        <button id="deleteBtn" class="btn-danger">Delete Post</button>
+      </div>
+    </div>
+    <script src="js/theme.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/post.js"></script>
+  </body>
+</html>

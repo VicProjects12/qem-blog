@@ -1,6 +1,6 @@
 requireAuth();
 
-const API = "https://qem-blog-production.up.railway.app/api";
+const API = "http://localhost:5000/api";
 
 // Initialise Quill editor
 const quill = new Quill("#editor", {

@@ -1,4 +1,4 @@
-const API = "https://qem-blog-production.up.railway.app/api";
+const API = "http://localhost:5000/api";
 
 // Read post ID from URL
 const params = new URLSearchParams(window.location.search);

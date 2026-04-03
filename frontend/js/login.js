@@ -15,7 +15,7 @@ document.getElementById("loginBtn").addEventListener("click", async () => {
 
   try {
     const response = await fetch(
-      "https://qem-blog-production.up.railway.app/api/auth/login",
+      "http://localhost:5000/api/auth/login",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

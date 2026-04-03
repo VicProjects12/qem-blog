@@ -100,10 +100,23 @@ h2 {
   transition: background 0.3s;
 }
 .navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--accent);
-  text-decoration: none;
+}
+
+.navbar .logo img {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar .logo span {
+  color: var(--accent);
 }
 .navbar .nav-links {
   display: flex;

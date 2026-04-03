@@ -1,4 +1,4 @@
-const API = "https://qem-blog-production.up.railway.app/api";
+const API = "http://localhost:5000/api";
 let currentPage = 1;
 let currentSearch = "";
 
